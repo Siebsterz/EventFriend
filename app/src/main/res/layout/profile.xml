@@ -6,12 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.siebster.eventfriend.ProfileActivity">
-    compile 'com.android.support:appcompat-v7:23.1.1'
-    compile 'com.android.support:design:23.1.1'
-    compile 'com.android.support:cardview-v7:23.1.1'
+
 <LinearLayout
+    android:orientation="vertical"
     android:layout_width="344dp"
-    android:layout_height="495dp">
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    tools:layout_editor_absoluteY="0dp"
+    tools:layout_editor_absoluteX="8dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent" >
 
     <ImageView
         android:id="@+id/profile_picture"
@@ -24,37 +30,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Siebe, 21"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintVertical_bias="0.336"
-        android:layout_marginTop="205dp" />
-
-    <Button
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        tools:layout_editor_absoluteY="299dp"
-        tools:layout_editor_absoluteX="165dp"
-        android:background="@android:color/transparent"
-        android:id="@+id/edit_interest"
-        android:layout_marginTop="350dp"
-        android:layout_marginLeft="-58dp"/>
+        android:layout_marginTop="15dp" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="-80dp"
-        android:layout_marginTop="400dp"
         android:text="Edit interests"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.665" />
+        android:layout_marginTop="250dp" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/edit_interest"
+        android:drawableTop="@drawable/ic_pencil"
+        android:layout_margin="5dp" />
 
 </LinearLayout>
 
