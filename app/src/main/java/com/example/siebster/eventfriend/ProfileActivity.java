@@ -30,7 +30,7 @@ public class ProfileActivity extends AppCompatActivity {
         setContentView(R.layout.profile);
 
         profilePicture = (ImageView) findViewById(R.id.profile_picture);
-
+        profilePicture.setImageResource(R.drawable.ic_portrait_black_24dp);
         profilePicture.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -45,14 +45,14 @@ public class ProfileActivity extends AppCompatActivity {
 
         });
 
-        Button next = (Button) findViewById(R.id.edit_interest);
+        Button edit = (Button) findViewById(R.id.edit_interest);
 
-        next.setOnClickListener(new View.OnClickListener() {
+        edit.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
+            public void onClick(View v2)
             {
-                Intent intent = new Intent(ProfileActivity.this, InterestActivity.class);
-                startActivity(intent);
+                Intent intent2 = new Intent(ProfileActivity.this, InterestActivity.class);
+                startActivity(intent2);
             }
         });
 

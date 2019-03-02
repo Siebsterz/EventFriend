@@ -6,23 +6,33 @@
     android:layout_height="match_parent"
     tools:context="com.example.siebster.eventfriend.MatchActivity">
     <LinearLayout
-        android:layout_width="344dp"
-        android:layout_height="495dp"
-        android:gravity="center_horizontal"
-        tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="8dp">
+        android:layout_width="358dp"
+        android:layout_height="508dp"
+        android:gravity="center_horizontal">
 
 
-    <TextView
+    <Button
+        android:id="@+id/food_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Music"
+        android:drawableTop="@drawable/ic_eten"
+        android:background="@android:color/transparent"
         android:layout_margin="10dp"/>
 
-    <TextView
+    <Button
+        android:id="@+id/art_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sports"
+        android:drawableTop="@drawable/ic_kunst"
+        android:background="@android:color/transparent"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/music_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_muziek"
+        android:background="@android:color/transparent"
         android:layout_margin="10dp"/>
 
     </LinearLayout>
