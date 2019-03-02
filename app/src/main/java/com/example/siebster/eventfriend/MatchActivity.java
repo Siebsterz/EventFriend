@@ -14,7 +14,7 @@ public class MatchActivity extends AppCompatActivity {
         setContentView(R.layout.match);
 
         Button next = (Button) findViewById(R.id.next_state);
-
+        Button next2 = (Button) findViewById(R.id.next_state2);
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
@@ -24,6 +24,14 @@ public class MatchActivity extends AppCompatActivity {
             }
         });
 
+        next2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(MatchActivity.this, ChatListActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

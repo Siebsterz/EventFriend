@@ -20,7 +20,7 @@
         <activity android:name=".ProfileActivity"
             android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ChatActivity"
+        <activity android:name=".ChatListActivity"
                   android:screenOrientation="portrait">
         </activity>
         <activity android:name=".LoginActivity"
@@ -28,6 +28,10 @@
 
         </activity>
         <activity android:name=".InterestActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".ChatActivity"
             android:screenOrientation="portrait">
 
         </activity>

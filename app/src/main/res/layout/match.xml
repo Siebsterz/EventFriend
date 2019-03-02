@@ -5,7 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.siebster.eventfriend.MatchActivity">
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,4 +23,11 @@
         android:layout_width="50dp"
         android:layout_height="50dp"/>
 
+    <Button
+        android:id="@+id/next_state2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        />
+</LinearLayout>
 </android.support.constraint.ConstraintLayout>
